@@ -107,6 +107,9 @@ header li:hover{
     margin-bottom: 50px;
     color: #7e7e7e;
 }
+.cehua-li .cehua-title:hover{
+    color: black;
+}
 .cehua-context{
     background: white;
     padding-bottom: 20px;
@@ -334,4 +337,18 @@ header li:hover{
 .article p{
     font-size: 20px;
     color: #7e7e7e;
+}
+.article-title{
+    font-size: 25px;
+    margin: 20px 0;
+}
+.article-content{
+    font-size: 20px;
+    color: #7e7e7e;
+    margin-bottom: 15px;
+}
+.article-contain img{
+    width: 100%;
+    max-width: 100%;
+    margin:5px 0;
 }
