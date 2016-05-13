@@ -301,3 +301,37 @@ header li:hover{
     padding:0 10px;
     color:#7e7e7e;
 }
+.article-list-title{
+    font-size: 30px;
+    color: #7e7e7e;
+    padding:20px 0;
+}
+.article-list-title::after{
+    content: "";
+    display: inline-block;
+    *display:inline;
+    width: 840px;
+    height: 1px;
+    background: #c11920;
+    vertical-align: middle;
+}
+.article-list-item{
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+.article-list-item img{
+    width: 45%;
+    height: 255px;
+}
+.article{
+    float: right;
+    width: 50%;
+    padding:15px 10px;
+}
+.article h2{
+    font-size: 25px;
+}
+.article p{
+    font-size: 20px;
+    color: #7e7e7e;
+}
