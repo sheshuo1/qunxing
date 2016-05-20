@@ -48,14 +48,14 @@ gulp.task('autofx', function () {
             remove:true //是否去掉不必要的前缀 默认：true 
         }))
         .pipe(rename({ suffix: '.fx' }))
-        .pipe(gulp.dest(cssSrc));
+        .pipe(gulp.dest('src/css'));
 });
 
 //自动编译less文件
 gulp.task('less',function(){
     gulp.src('src/css/*.less')
         .pipe(less())
-        .pipe(gulp.dest(cssSrc));
+        .pipe(gulp.dest('src/css'));
 });
 
 //压缩图片
