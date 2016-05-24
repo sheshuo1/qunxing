@@ -234,9 +234,10 @@
        document.querySelector('video').play();
        $(this).hide();
     });
-    $('video').on('click',function(){
+    $('video').on('click',function(e){
         this.pause();
         $('.video-ctrl').show();
+        e.preventDefault();
     });
 </script>
 </body>
