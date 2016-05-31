@@ -67,6 +67,9 @@ header li:hover{
 #myCarousel{
     margin-top: -156px;
 }
+.carousel-inner img{
+    width:100%;
+}
 .index-title{
     text-align: center;
     font-size: 34px;
