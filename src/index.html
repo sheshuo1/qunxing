@@ -23,7 +23,7 @@
             <li><a href="item-index.html" >演艺策划</a></li>
             <li><a href="item-index.html" >多媒体制作</a></li>
             <li><a href="item-list.html" >合作团队</a></li>
-            <li><a href="item-list.html" >关于我们</a></li>
+            <li><a href="#about-us" id="scrollTo">关于我们</a></li>
         </ul>
     </nav>
     <!--网站主导航栏 end-->
@@ -204,7 +204,7 @@
 
 <section class="about">
     <div class="contain">
-        <h1 class="index-title">关于我们</h1>
+        <h1 class="index-title" id="about-us">关于我们</h1>
         <div class="aboutcard">
             <img src="images/logo1.jpg" alt="icon">
             <h3>组织架构</h3>
@@ -226,7 +226,6 @@
     </div>
 </section>
 
-
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script>
@@ -238,6 +237,14 @@
         this.pause();
         $('.video-ctrl').show();
         e.preventDefault();
+    });
+
+    //滚动到指定元素位置
+    $('#scrollTo').on('click',function(){
+        $('html, body').animate({
+            scrollTop: $("#about-us").offset().top
+        }, 500);
+
     });
 </script>
 </body>
