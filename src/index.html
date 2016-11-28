@@ -226,6 +226,30 @@
     </div>
 </section>
 
+<aside>
+    <h1><img class="btn-hidden active" src="images/hidden.png" alt="hidden"><img class="btn-show" src="images/show.png" alt="show"> 联系方式</h1>
+    <div class="connection">
+        <p><span><img src="images/tel.png" alt="tel"></span> 0771-5604240</p>
+        <p><span><img src="images/photo.png" alt="photo"></span> 13471155665</p>
+        <p><span><img src="images/mail.png" alt="mail"></span> 45613123@qq.com</p>
+    </div>
+    <h1>QQ咨询</h1>
+    <p>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=45613123&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:45613123:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=258724700&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:258724700:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+    </p>
+</aside>
+
+<footer>
+    <div class="contain">
+        <p>
+            <span>广西南宁优云网络科技有限公司</span>
+            <a href="http://www.miibeian.gov.cn/" target="_blank">桂ICP备15000036号-2</a>
+            <span>Copyright 2016,版权所有QXYISHU.COM</span>
+        </p>
+    </div>
+</footer>
+
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script>
@@ -246,6 +270,17 @@
         }, 500);
 
     });
+
+    $('.btn-hidden').on('click',function () {
+        $('aside').addClass('active');
+        $('aside .btn-show').addClass('active');
+        $('aside .btn-hidden').removeClass('active');
+    });
+    $('.btn-show').on('click',function () {
+        $('aside').removeClass('active');
+        $('aside .btn-show').removeClass('active');
+        $('aside .btn-hidden').addClass('active');
+    })
 </script>
 </body>
 </html>

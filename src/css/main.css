@@ -18,7 +18,6 @@ a:link{
 }
 body{
     background: #e7e7e7 ;
-    padding-bottom: 100px;
 }
 header{
     margin-top: 50px;
@@ -64,6 +63,85 @@ header li:hover{
 .nav-active{
     border-color: white;
 }
+footer{
+    height: 100px;
+    background: #434343;
+    margin-top: 50px;
+}
+footer p{
+    text-align: center;
+    color:white;
+    line-height: 100px;
+}
+footer p a{
+    color:inherit;
+}
+footer p span{
+    float: left;
+}
+footer p span:last-of-type{
+    float: right;
+}
+
+aside{
+    position: fixed;
+    top:80px;
+    right:0;
+    background: rgba(0,0,0,0.2);
+    width: 217px;
+    color:white;
+    padding-bottom: 20px;
+    border: 2px solid rgba(255,255,255,0.2);
+    transition: all 0.5s;
+}
+aside.active{
+    right:-217px;
+}
+aside h1{
+    font-size: 16px;
+    text-align: center;
+    line-height:36px;
+    margin:0;
+    position: relative;
+}
+aside h1 img{
+    height: 36px;
+    padding:8px;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+    cursor: pointer;
+}
+aside h1 img.btn-hidden.active{
+    display: block;
+    left:0;
+}
+aside h1 img.btn-show.active{
+    display: block;
+    left:-38px;
+}
+aside .connection{
+    padding:10px 0;
+    border-top: 2px solid rgba(255,255,255,0.2);
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+aside p{
+    padding-left:2em;
+    margin-bottom: 0;
+    line-height: 2em;
+}
+aside .connection span{
+    display: inline-block;
+    width: 30px;
+}
+aside .connection img{
+    display: block;
+    margin:0 auto;
+}
+
+
 #myCarousel{
     margin-top: -156px;
 }
